@@ -1,0 +1,8 @@
+/*
+ * Entry stylesheet. Order matters: Tailwind, then project tokens.
+ * Do not add visual values here. Values live in src/tokens/.
+ */
+@import "tailwindcss";
+@import "./tokens/primitives.css";
+@import "./tokens/semantic.css";
+@import "./tokens/theme.css";

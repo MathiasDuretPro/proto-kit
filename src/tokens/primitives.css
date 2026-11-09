@@ -1,0 +1,11 @@
+/*
+ * PRIMITIVES: raw values extracted from Figma (skill: extract-tokens).
+ *
+ * - Every variable is prefixed --primitive- (e.g. --primitive-color-blue-500).
+ * - Values come from Figma variables or styles only. Never invent one.
+ * - Unknown or undecided value: leave a TODO comment and log it in context/decisions.md.
+ * - Only src/tokens/semantic.css may reference these. Components never do
+ *   (npm run lint:tokens enforces it).
+ */
+:root {
+}

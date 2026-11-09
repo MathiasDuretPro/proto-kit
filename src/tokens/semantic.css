@@ -1,0 +1,12 @@
+/*
+ * SEMANTIC TOKENS: values named by role, never by appearance (skill: extract-tokens).
+ *
+ * - Each token points to a primitive: --surface-default: var(--primitive-color-white);
+ * - Groups: surface, text, border, action, status, layout (grid, spacing),
+ *   radius, elevation, typography, motion, z-index.
+ * - Status tokens (success, warning, error) only signal a state, never decorate.
+ * - Grid: columns, gutter, margin and max width per breakpoint, as tokens.
+ * - Motion: durations and easings from Figma prototype specs; otherwise TODO.
+ */
+:root {
+}
