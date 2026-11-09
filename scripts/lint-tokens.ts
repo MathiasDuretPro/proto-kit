@@ -29,6 +29,7 @@ const exts = new Set(['.ts', '.tsx', '.css'])
 const skipDirs = new Set(['node_modules', 'tokens', 'assets', 'mocks'])
 
 function files(dir: string): string[] {
+  if (!statSync(dir).isDirectory()) return exts.has(path.extname(dir)) ? [dir] : []
   return readdirSync(dir).flatMap((name) => {
     const p = path.join(dir, name)
     if (statSync(p).isDirectory()) return skipDirs.has(name) ? [] : files(p)

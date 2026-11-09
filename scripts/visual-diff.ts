@@ -68,6 +68,10 @@ if (jobs.length === 0 && update && breakpoint && config.breakpoints[breakpoint])
   // New reference from the current render (validated screens only).
   jobs.push({ name: `${target}@${breakpoint}`, refPath: path.join(refsDir, `${target}@${breakpoint}.png`), width: config.breakpoints[breakpoint], height: 800 })
 }
+if (jobs.length === 0 && update && isComponent) {
+  // Components are captured at their own size: the viewport only needs to contain them.
+  jobs.push({ name: target, refPath: path.join(refsDir, `${target}.png`), width: 800, height: 600 })
+}
 if (jobs.length === 0) {
   console.error(`No reference for "${target}"${breakpoint ? ` @${breakpoint}` : ''} in ${refsDir}/. Export it from Figma at @${scale}x first.`)
   process.exit(2)
