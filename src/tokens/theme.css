@@ -1,0 +1,18 @@
+/*
+ * TAILWIND MAPPING: exposes semantic tokens as Tailwind utilities.
+ *
+ * 1. The reset below removes every Tailwind default (palette, font sizes,
+ *    spacing, breakpoints, shadows...). Only project tokens exist, so no
+ *    utility can produce a value that is not in Figma.
+ * 2. Map semantic tokens only, never primitives:
+ *      --color-surface-default: var(--surface-default);   -> bg-surface-default
+ *      --text-body: var(--font-size-body);                -> text-body
+ *      --spacing-md: var(--space-md);                     -> p-md, gap-md
+ *      --breakpoint-tablet: 48rem;                        -> tablet:
+ *    (Breakpoints cannot use var(): write the value from context/client.md.)
+ * 3. When you add a font-size, color or spacing name here, also add it to
+ *    src/lib/utils.ts (tokenScales) so cn() merges classes correctly.
+ */
+@theme {
+  --*: initial;
+}
