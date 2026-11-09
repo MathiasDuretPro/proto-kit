@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 
 type Token = { name: string; value: string }
 
@@ -30,8 +30,8 @@ function readSemanticTokens(): Token[] {
 }
 
 export function TokenTable() {
-  const [tokens, setTokens] = useState<Token[]>([])
-  useEffect(() => setTokens(readSemanticTokens()), [])
+  // Stylesheets are loaded before the first render (imported in main.tsx).
+  const [tokens] = useState<Token[]>(readSemanticTokens)
 
   if (tokens.length === 0) return <p>No semantic token yet (skill: extract-tokens).</p>
   return (
