@@ -18,6 +18,7 @@
     "diff:update": "node scripts/visual-diff.ts --update",
     "assets": "node scripts/optimize-assets.ts",
     "selftest": "node scripts/selftest.ts",
+    "doctor": "node scripts/doctor.ts",
     "check": "npm run lint && npm run lint:tokens && npm run typecheck && npm run build && npm run a11y"
   },
   "dependencies": {
