@@ -1,0 +1,23 @@
+{
+  "name": "create-proto-kit",
+  "version": "0.1.0",
+  "description": "Start a Figma-to-prototype project with Claude Code: npm create proto-kit@latest",
+  "type": "module",
+  "bin": {
+    "create-proto-kit": "index.js"
+  },
+  "files": [
+    "index.js",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=22.22.0"
+  },
+  "keywords": [
+    "figma",
+    "prototype",
+    "claude-code",
+    "design-tokens",
+    "create"
+  ]
+}

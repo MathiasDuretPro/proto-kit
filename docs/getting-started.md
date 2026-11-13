@@ -9,17 +9,22 @@ Count half a day for setup and phases 0 to 1 on a small Figma file.
 - [Claude Code](https://claude.com/claude-code): CLI or desktop app.
 - The Figma desktop app, with a seat that gives access to Dev Mode.
 
-## 2. Create the client repo
-
-On GitHub, click **Use this template** on the proto-kit repo and create a
-private repo for the client. Then:
+## 2. Create the client project
 
 ```bash
-git clone <your-new-repo>
-cd <your-new-repo>
-npm install
-npx playwright install chromium
+npm create proto-kit@latest my-client
+cd my-client
 ```
+
+The command asks for the client name and the Figma URL, copies the template,
+fills `context/client.md`, makes a first git commit, installs the dependencies
+and Chromium, then runs `npm run doctor`.
+
+Until `create-proto-kit` is published on npm, run it from a clone of proto-kit:
+`node create/index.js ../my-client`.
+
+To push the project to GitHub, create an empty private repo for the client,
+then `git remote add origin <url>` and `git push -u origin main`.
 
 ## 3. Check everything
 
