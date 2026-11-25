@@ -6,6 +6,27 @@ The kit brings the method, the tooling and the guardrails. It contains no visual
 choice: every color, size and font comes from the client's Figma file. A designer
 drives, Claude Code builds, and the scripts check that nothing drifts.
 
+## Why this exists
+
+I'm a UX designer, not a developer. proto-kit is a personal experiment that grew
+project after project: every time I turn a client's mockups into a prototype, I
+fix what went wrong and encode it in the kit. Today I use it with my clients,
+and it lets me move faster with results I'm happy with.
+
+It is heavily inspired by the practices shared by:
+
+- **Luke Wroblewski**: [Design Systems for AI Agents](https://www.lukew.com/ff/2164/design-systems-for-ai-agents)
+  and [The AI Steering Layer](https://www.lukew.com/ff/2155/the-ai-steering-layer)
+  (see also [Collaborative Steering](https://www.lukew.com/ff/2153/collaborative-steering),
+  [Finally, the Handoff Is Dead](https://www.lukew.com/ff/2150/finally-the-handoff-is-dead)
+  and [The New Designer/Developer Collaboration](https://www.lukew.com/ff/2148/the-new-designer-developer-collaboration));
+- **Rico** ([@_heyrico](https://x.com/_heyrico)): [Build the design system and skills your agent can follow](https://x.com/_heyrico/status/2116953958279479760);
+- **Tanner Kohler, NN/g**: [The Role of UX in Agentic Software Factories](https://www.nngroup.com/articles/ux-agentic-software-factories/).
+
+I'd love your feedback: what works, what breaks, what you would do differently.
+[Open an issue](https://github.com/MathiasDuretPro/proto-kit/issues/new/choose),
+I read them all.
+
 ## What you get
 
 - **A 7-phase method** (inventory, tokens, components, screens, refinement,
