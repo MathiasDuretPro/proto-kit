@@ -1,4 +1,9 @@
-# BOOTSTRAP : construire proto-kit
+# Brief initial : construire proto-kit
+
+> Document historique. C'est le cahier des charges qui a servi à construire
+> le kit avec Claude Code. Il explique les choix de départ, mais ne décrit pas
+> forcément le kit tel qu'il est aujourd'hui : pour l'utiliser, lire
+> [README.md](../README.md) et [getting-started.md](getting-started.md).
 
 ## Mission
 
@@ -47,7 +52,7 @@ Toute autre dépendance : me demander avant.
 
 ```
 CLAUDE.md                     steering layer principal (court)
-BOOTSTRAP.md                  conservé pour l'historique
+docs/kit-brief.md             ce brief, conservé pour l'historique
 README.md                     démarrer un projet client en 10 lignes
 .github/workflows/check.yml   CI : npm run check sur chaque PR
 .claude/skills/

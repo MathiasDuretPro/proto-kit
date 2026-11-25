@@ -88,7 +88,7 @@ mixing Radix and Base UI.
   `<screen>@<breakpoint>.png`, `<component>--<state>.png`.
 - `/design-system` showcase, `/render/<name>/<state>` one state alone,
   `/_index` list of screens.
-- Scripts: `npm run dev | diff | diff:update | lint:tokens | a11y | check | selftest | assets`.
+- Scripts: `npm run dev | doctor | diff | diff:update | lint:tokens | a11y | check | selftest | assets`.
 
 ## 8. Git
 - One branch per component or screen: `comp/<name>`, `screen/<name>`.
