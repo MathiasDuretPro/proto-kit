@@ -1,6 +1,13 @@
 {
   "name": "create-proto-kit",
   "version": "0.1.0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MathiasDuretPro/proto-kit.git",
+    "directory": "create"
+  },
+  "homepage": "https://github.com/MathiasDuretPro/proto-kit#readme",
   "description": "Start a Figma-to-prototype project with Claude Code: npm create proto-kit@latest",
   "type": "module",
   "bin": {

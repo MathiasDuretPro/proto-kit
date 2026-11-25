@@ -17,14 +17,24 @@
  * No dependency: Node built-ins only, so `npm create` stays fast.
  */
 import { spawnSync } from 'node:child_process'
-import { existsSync, readFileSync, readdirSync, rmSync, writeFileSync } from 'node:fs'
+import { existsSync, readFileSync, readdirSync, renameSync, rmSync, writeFileSync } from 'node:fs'
 import path from 'node:path'
 import { createInterface } from 'node:readline/promises'
 import { stdin, stdout } from 'node:process'
 
 const DEFAULT_TEMPLATE = 'https://github.com/MathiasDuretPro/proto-kit.git'
-/** Files of the kit itself that a client project does not need. */
-const KIT_ONLY = ['create', '.git']
+/** Files about maintaining the kit itself, not needed in a client project. */
+const KIT_ONLY = [
+  '.git',
+  'create',
+  'CHANGELOG.md',
+  'CONTRIBUTING.md',
+  'CODE_OF_CONDUCT.md',
+  'SECURITY.md',
+  '.github/ISSUE_TEMPLATE',
+  '.github/pull_request_template.md',
+  '.github/dependabot.yml',
+]
 
 const argv = process.argv.slice(2)
 const flags = { template: DEFAULT_TEMPLATE, ref: 'main', install: true, git: true, yes: false }
@@ -91,6 +101,10 @@ if (!run('git', ['clone', '--quiet', '--depth', '1', '--branch', flags.ref, flag
   fail(`Could not clone ${flags.template}. Check your access to the repo and that git is installed.`)
 }
 for (const f of KIT_ONLY) rmSync(path.join(target, f), { recursive: true, force: true })
+// The MIT notice must stay with the copied code, but the client project is not
+// MIT itself: keep the kit's licence under an explicit name.
+const licence = path.join(target, 'LICENSE')
+if (existsSync(licence)) renameSync(licence, path.join(target, 'LICENSE-proto-kit'))
 
 // 2. Personalize.
 step(2, 'Filling in the project details')
