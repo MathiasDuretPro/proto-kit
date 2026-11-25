@@ -20,9 +20,6 @@ The command asks for the client name and the Figma URL, copies the template,
 fills `context/client.md`, makes a first git commit, installs the dependencies
 and Chromium, then runs `npm run doctor`.
 
-Until `create-proto-kit` is published on npm, run it from a clone of proto-kit:
-`node create/index.js ../my-client`.
-
 To push the project to GitHub, create an empty private repo for the client,
 then `git remote add origin <url>` and `git push -u origin main`.
 
