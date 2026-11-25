@@ -1,0 +1,29 @@
+name: Bug
+description: A script, a skill or the installer does not do what it should.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Never paste client data (Figma URLs, captures, names). Reproduce with `example/` when you can.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: The command or the request to Claude, and what you got (paste the output).
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+  - type: textarea
+    id: doctor
+    attributes:
+      label: Output of `npm run doctor`
+      render: text
+  - type: input
+    id: version
+    attributes:
+      label: proto-kit version or commit

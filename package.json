@@ -2,6 +2,13 @@
   "name": "proto-kit",
   "private": true,
   "version": "0.1.0",
+  "description": "Turn Figma mockups into faithful, testable HTML prototypes with Claude Code.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MathiasDuretPro/proto-kit.git"
+  },
+  "homepage": "https://github.com/MathiasDuretPro/proto-kit#readme",
   "type": "module",
   "engines": {
     "node": ">=22.22.0"

@@ -24,18 +24,20 @@ Requirements: Node 22.22+, git, [Claude Code](https://claude.com/claude-code),
 the Figma desktop app.
 
 ```bash
-# 1. Create your client repo from this template (GitHub "Use this template"), then:
-git clone <your-new-repo> && cd <your-new-repo>
-npm install
-npx playwright install chromium
-
-# 2. Check the machine and the tooling
-npm run doctor
-npm run selftest
+npm create proto-kit@latest my-client
 ```
 
-Then fill `context/client.md`, enable the Figma MCP server (Figma desktop app >
-Dev Mode > MCP server), start Claude Code in the repo and ask:
+One command: it asks for the client name and Figma URL, copies the template,
+fills `context/client.md`, starts a git repo, installs everything and runs
+`npm run doctor`. See [create/](create/README.md) for the options.
+
+> Until `create-proto-kit` is published on npm, run it from a clone of this
+> repo: `node create/index.js ../my-client`. The GitHub "Use this template"
+> button also works, followed by `npm install`, `npx playwright install chromium`
+> and `npm run doctor`.
+
+Then enable the Figma MCP server (Figma desktop app > Dev Mode > MCP server),
+start Claude Code in the project and ask:
 
 > Run phase 0 (figma-inventory) on <Figma URL>
 
@@ -63,3 +65,16 @@ the first time you open the project.
 | `npm run diff -- <name> [breakpoint]` | Compare a screen or state to its Figma capture |
 | `npm run diff:update -- <name> --confirm` | Replace the reference with the current render (after approval only) |
 | `npm run assets` | Optimize images and icons |
+
+## Contributing
+
+Ideas, bugs and skill improvements are welcome: read
+[CONTRIBUTING.md](https://github.com/MathiasDuretPro/proto-kit/blob/main/CONTRIBUTING.md)
+and the [code of conduct](https://github.com/MathiasDuretPro/proto-kit/blob/main/CODE_OF_CONDUCT.md).
+Security issues: see [SECURITY.md](https://github.com/MathiasDuretPro/proto-kit/blob/main/SECURITY.md).
+
+## License
+
+[MIT](https://github.com/MathiasDuretPro/proto-kit/blob/main/LICENSE). Projects
+created with `create-proto-kit` keep this notice in `LICENSE-proto-kit`; your
+client code stays yours.

@@ -1,0 +1,23 @@
+name: Idea or skill improvement
+description: Propose a new guardrail, a change to a skill or to the method.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: The problem
+      description: What went wrong on a real project, or what took too long. Without client details.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Your proposal
+      description: Which file would change (CLAUDE.md, a skill, a script) and how.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why it helps every project
+      description: The kit makes no visual choice and holds no client data; explain how the idea fits.
