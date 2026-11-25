@@ -69,10 +69,12 @@ the first time you open the project.
 ## Contributing
 
 Ideas, bugs and skill improvements are welcome: read
-[CONTRIBUTING.md](CONTRIBUTING.md) and the [code of conduct](CODE_OF_CONDUCT.md).
-Security issues: see [SECURITY.md](SECURITY.md).
+[CONTRIBUTING.md](https://github.com/MathiasDuretPro/proto-kit/blob/main/CONTRIBUTING.md)
+and the [code of conduct](https://github.com/MathiasDuretPro/proto-kit/blob/main/CODE_OF_CONDUCT.md).
+Security issues: see [SECURITY.md](https://github.com/MathiasDuretPro/proto-kit/blob/main/SECURITY.md).
 
 ## License
 
-[MIT](LICENSE). Projects created with `create-proto-kit` keep this notice in
-`LICENSE-proto-kit`; your client code stays yours.
+[MIT](https://github.com/MathiasDuretPro/proto-kit/blob/main/LICENSE). Projects
+created with `create-proto-kit` keep this notice in `LICENSE-proto-kit`; your
+client code stays yours.
