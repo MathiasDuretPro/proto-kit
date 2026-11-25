@@ -7,7 +7,7 @@ versions follow [semver](https://semver.org/).
 
 ### Added
 - `npm create proto-kit@latest`: one command to start a client project
-  (`create/`, not published on npm yet).
+  (`create/`, published on npm as `create-proto-kit`).
 - `npm run doctor`: checks the machine and says how to fix what is missing.
 - `.mcp.json`: Figma desktop MCP server declared for the project.
 - Docs: `docs/getting-started.md`, `docs/how-it-works.md`.

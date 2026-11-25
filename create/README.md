@@ -1,6 +1,6 @@
 # create-proto-kit
 
-Starts a new client project from the [proto-kit](../README.md) template.
+Starts a new client project from the [proto-kit](https://github.com/MathiasDuretPro/proto-kit) template.
 
 ```bash
 npm create proto-kit@latest my-client

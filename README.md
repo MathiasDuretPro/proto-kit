@@ -31,10 +31,8 @@ One command: it asks for the client name and Figma URL, copies the template,
 fills `context/client.md`, starts a git repo, installs everything and runs
 `npm run doctor`. See [create/](create/README.md) for the options.
 
-> Until `create-proto-kit` is published on npm, run it from a clone of this
-> repo: `node create/index.js ../my-client`. The GitHub "Use this template"
-> button also works, followed by `npm install`, `npx playwright install chromium`
-> and `npm run doctor`.
+> The GitHub "Use this template" button also works, followed by `npm install`,
+> `npx playwright install chromium` and `npm run doctor`.
 
 Then enable the Figma MCP server (Figma desktop app > Dev Mode > MCP server),
 start Claude Code in the project and ask:
